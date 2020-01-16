@@ -40,7 +40,7 @@
 	<key>description</key>
 	<string>Alfred workflow to convert human date to computer date</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>FuzzyDate</string>
 	<key>objects</key>

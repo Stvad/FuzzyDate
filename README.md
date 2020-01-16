@@ -1,4 +1,10 @@
-# FuzzyDate
-Alfred Workflow to parse a fuzzy date and print the formal date
+# alfred-fuzzy-date
 
-Need to copy info.plist, icons, update package.json then can do `npm publish`
+[Alfred](https://www.alfredapp.com/) workflow to convert human date to computer date.  
+Made for use with http://roamresearch.com/
+
+![](giflink.gif)
+
+## Installation
+
+`npm install -g alfred-fuzzy-date`
