@@ -1,0 +1,24 @@
+{
+  "main": "kotlin/alfred-fuzzy-date.js",
+  "devDependencies": {},
+  "dependencies": {
+    "kotlin": "1.3.61",
+    "alfy": "0.9.1",
+    "chrono-node": "1.4.2",
+    "dateformat": "*"
+  },
+  "description": "Alfred workflow to convert human date to computer date",
+  "author": {
+    "email": "root@stvad.org",
+    "name": "Vladyslav Sitalo"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "alfred-fuzzy-date",
+  "version": "0.1.5"
+}
