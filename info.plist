@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>org.stvad.fuzzydate_</string>
+	<string>org.stvad.fuzzydate</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -13,6 +13,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>459E7D46-309D-4B35-A7F3-B8BCFE295918</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy without pasting the frontmost application</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E875006D-D5CE-4BA8-8DB1-309E01B4339E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -40,7 +50,7 @@
 	<key>description</key>
 	<string>Alfred workflow to convert human date to computer date</string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>FuzzyDate</string>
 	<key>objects</key>
@@ -49,7 +59,7 @@
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
-				<true/>
+				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
 				<key>transient</key>
@@ -114,6 +124,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>E875006D-D5CE-4BA8-8DB1-309E01B4339E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -166,15 +193,25 @@ Configure date format string according to the options described here: https://ww
 		<key>459E7D46-309D-4B35-A7F3-B8BCFE295918</key>
 		<dict>
 			<key>xpos</key>
-			<integer>455</integer>
+			<integer>540</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>110</integer>
+		</dict>
+		<key>E875006D-D5CE-4BA8-8DB1-309E01B4339E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>540</integer>
+			<key>ypos</key>
+			<integer>260</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>dateFormat</key>
 		<string>'[['mmmm dS, yyyy']]'</string>
+		<key>repeatedSeparator</key>
+		<string>
+</string>
 	</dict>
 	<key>version</key>
 	<string></string>
