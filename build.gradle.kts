@@ -25,3 +25,11 @@ kotlin {
     target.nodejs {
     }
 }
+
+val packageLocation = "build/js/packages/${project.name}"
+val copyWorkflowResources by tasks.registering(Copy::class) {
+    from("README.md", "workflow_resources", "illustrations")
+    into(packageLocation)
+}
+
+tasks.assemble { dependsOn(copyWorkflowResources) }

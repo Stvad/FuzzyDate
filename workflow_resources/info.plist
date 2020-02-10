@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>org.stvad.fuzzydate</string>
+	<string>org.stvad.fuzzydate_</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -100,7 +100,8 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>cd ./build/js/ &amp;&amp; ./node_modules/.bin/run-node packages/alfred-fuzzy-date/kotlin/alfred-fuzzy-date.js "$1"</string>
+				<string>cd ../build/js/packages/alfred-fuzzy-date
+./node_modules/.bin/run-node kotlin/alfred-fuzzy-date.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
