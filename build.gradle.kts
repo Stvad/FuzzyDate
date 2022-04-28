@@ -21,7 +21,7 @@ kotlin {
     sourceSets["main"].dependencies {
         implementation(npm("alfy", "0.9.1"))
         implementation(npm("chrono-node", "1.4.2"))
-        implementation(npm("dateformat", "*"))
+        implementation(npm("dateformat", "^4"))
     }
     target.useCommonJs()
 
